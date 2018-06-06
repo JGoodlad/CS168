@@ -32,17 +32,17 @@ datetime
 scipy  
 
 # Managing Data
-For the classifier the data must be arragned as follows:
-/train/NoNerve
-/train/Nerve
-where each folder only contains the respective ultrasound images (not the masks)
+For the classifier the data must be arragned as follows:  
+/train/NoNerve  
+/train/Nerve  
+where each folder only contains the respective ultrasound images (not the masks)  
 
-For the segmenter the data must be arranged as follows:
-/masks/
-/iamges/
-where the former contains the masks and the latter contains the ultrasound images
+For the segmenter the data must be arranged as follows:  
+/masks/  
+/images/  
+where the former contains the masks and the latter contains the ultrasound images 
 
 # Utility
-LabelingTool.ipynb is a tool that can be used to seperate the ultrasound images based on the presence of a nerve.
+LabelingTool.ipynb is a tool that can be used to seperate the ultrasound images based on the presence of a nerve.  
 If the mean value of a mask (as a .tif) is 0.0, then there was no ROI and thus should be in the NoLegion category and vis versa.
 
